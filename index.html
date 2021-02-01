@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="city">
+        <input type="text" class="city-name" placeholder="Enter city name">
+        <button class="city-button show-weather-button">Show weather</button>
+     </div>
+     <div class="weather-container hide">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="city-selected"></div>
+                    <div class="time-now"></div> 
+                    <div class="date-now"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="picture"><img src="" alt="" class="picture-icon"></div> 
+                    <div class="clouds"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="humidity"></div>
+                    <div class="pressure"></div>
+                    <div class="wind"></div>
+                    <div class="sunrise-time"></div>
+                    <div class="sunset-time"></div>
+                </div>
+                <div class="col-md-5">
+                    <div class="temperature"></div>
+                    <div class="feels-like"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 flex-item">
+                    <div class="update"></div>
+                    <button class="city-button update-button"></button>  
+                </div>
+                <div class="col-md-5">
+                    <div class="min-temp"></div>
+                    <div class="max-temp"></div>
+                </div>
+            </div>
+        </div>
+     </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
