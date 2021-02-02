@@ -15,7 +15,7 @@ cityButton.forEach(item => {
             cityDoc.textContent = city
 
             if (data.message == "city not found" || data.message == "Nothing to geocode") {
-                alert("City does not exist")
+                alert("This city does not exist")
                 
                 function closeWeatherContainer () {
                     weatherContainer.classList.add("hide");
@@ -29,7 +29,7 @@ cityButton.forEach(item => {
                     weatherContainer.classList.remove("hide");
                 }
                 openWeatherContainer ()
-                
+
                 let dateNowDoc = document.querySelector(".date-now")
                 let dateNow = new Date()
                 dateNowDoc.textContent = dateNow.toString().slice(0,10)
